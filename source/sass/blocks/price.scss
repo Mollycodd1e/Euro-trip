@@ -1,0 +1,414 @@
+.price {
+  margin-top: 110px;
+}
+
+.price__title {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #2C2E3F;
+}
+
+.price__description {
+  width: 288px;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.price__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 19px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.price__item {
+  box-sizing: border-box;
+  width: 288px;
+  margin: auto;
+  margin-top: -2px;
+
+  cursor: pointer;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.price__item:hover,
+.price__item:focus {
+  border: 3px solid #FE7865;
+  border-bottom: 15000000px;
+}
+
+.price__item:hover .price__properties-list,
+.price__item:focus .price__properties-list {
+  list-style-image: url("../img/black-mark.png");
+}
+
+.price__item:hover .price__card-description::after,
+.price__item:focus .price__card-description::after {
+  background-color: #FE7865;
+  opacity: 0.5;
+}
+
+.price__item:hover .price__card-title,
+.price__item:focus .price__card-title {
+  margin-top: 27px;
+
+  color: #FE7865;
+}
+
+.price__item:hover .price__value,
+.price__item:focus .price__value {
+  color: #FE7865;
+}
+
+.price__item:nth-child(2) {
+  margin-top: 29px;
+}
+
+.price__card-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 28px;
+  margin-bottom: 0;
+  text-align: center;
+
+  color: rgba(20, 21, 23, 0.7);
+}
+
+.price__item--economy .price__card-title {
+  letter-spacing: -1.27273px;
+}
+
+.price__value {
+  margin: 0;
+  margin-top: 7px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+
+  color: rgba(20, 21, 23, 0.7);
+}
+
+.price__item--economy .price__value {
+  margin-top: 6px;
+  margin-left: -11px;
+}
+
+.price__card-description {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #2C2E3F;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -9px;
+    left: 0;
+    width: 248px;
+    height: 1px;
+    background-color: rgba(44, 46, 63, 0.3);
+  }
+}
+
+.price__properties-list {
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
+  margin-top: 32px;
+  margin-left: 43px;
+  margin-right: 20px;
+  list-style-image: url("../img/orange-mark.png");
+}
+
+.price__properties-item {
+  margin: 0;
+  margin-top: 8px;
+  padding-left: 5px;
+}
+
+.price__link {
+  margin-top: 30px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.price__item--complex .price__link {
+  margin-top: 29px;
+}
+
+.price__item--economy .price__properties-item {
+  margin-top: 10px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .price__item--complex:hover .price__link,
+  .price__item--complex:focus .price__link {
+    margin-top: 31px;
+  }
+
+  .price__item--economy:hover .price__link,
+  .price__item--economy:focus .price__link {
+    padding-top: 20px;
+    margin-top: 31px;
+  }
+
+  .price__item:hover .price__card-description,
+  .price__item:focus .price__card-description {
+    margin-top: 10px;
+  }
+
+  .price__item:hover,
+  .price__item:focus {
+    width: 292px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    margin-top: 111px;
+  }
+
+  .price__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .price__description {
+    width: 730px;
+    margin-top: 21px;
+  }
+
+  .price__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 626px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .price__item,
+  .price__item:nth-child(2) {
+    margin: 0px;
+  }
+
+  .price__item--complex .price__properties-item:nth-child(2) {
+    margin-top: 4px;
+  }
+
+  .price__item--complex .price__properties-item:nth-child(3) {
+    margin-top: 12px;
+  }
+
+  .price__link {
+    width: 100%;
+  }
+
+  .price__item--complex .price__link {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .price__item:hover .price__properties-list,
+  .price__item:focus .price__properties-list {
+    margin-left: 41px;
+  }
+
+  .price__item:hover .price__card-title,
+  .price__item:focus .price__card-title {
+    margin-top: 26px;
+  }
+
+  .price__item:hover,
+  .price__item:focus {
+    margin-bottom: 1.5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 225px;
+  }
+
+  .price__title {
+    position: relative;
+    font-size: 55px;
+    line-height: 90px;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -17px;
+      left: 0;
+      width: 175px;
+      height: 3px;
+
+      background-color: #FE7865;
+    }
+  }
+
+  .price__item:hover,
+  .price__item:focus {
+    border: 3px solid #FE7865;
+    margin-bottom: 10px;
+  }
+
+  .price__item:hover .price__card-title,
+  .price__item:focus .price__card-title {
+    margin-top: 39px;
+  }
+
+  .price__item:hover .price__properties-list,
+  .price__item:focus .price__properties-list {
+    margin-left: 52px;
+  }
+
+  .price__item--economy:hover .price__properties-list,
+  .price__item--economy:focus .price__properties-list {
+    margin-top: 50px;
+  }
+
+  .price__description {
+    width: 300px;
+    margin-top: 48px;
+    text-align: left;
+  }
+
+  .price__list {
+    margin: 0;
+  }
+
+  .price__list {
+    width: 794px;
+  }
+
+  .price__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 372px;
+    border-radius: 6px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+
+  .price__value {
+    margin-top: 33px;
+    margin-left: 25px;
+    align-self: center;
+  }
+
+  .price__card-title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 40px;
+  }
+
+  .price__item--economy .price__card-title {
+    margin-top: 43px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .price__card-description {
+    width: 280px;
+    text-align: left;
+    margin-left: -13px;
+    margin-top: 37px;
+
+    &::after {
+      bottom: -22px;
+      width: 310px;
+    }
+  }
+
+  .price__properties-list {
+    margin-left: 54px;
+    margin-right: 40px;
+    margin-top: 55px;
+  }
+
+  .price__item,
+  .price__item:nth-child(2) {
+    margin: 11px;
+  }
+
+  .price__properties-item:first-child {
+    margin-top: 5px;
+  }
+
+  .price__item--complex .price__properties-item:nth-child(2) {
+    margin-top: 6px;
+  }
+
+  .price__item--complex .price__properties-item:last-child {
+    margin-top: 20px;
+  }
+
+  .price__item--economy .price__card-description {
+    margin-top: 38px;
+  }
+
+  .price__item--economy .price__value {
+    margin-top: 43px;
+    margin-left: 80px;
+  }
+
+  .price__item--economy .price__properties-list {
+    margin-top: 48px;
+  }
+
+  .price__item--economy .price__properties-item {
+    margin-top: 13px;
+  }
+
+  .price__item--economy .price__properties-item:last-child {
+    margin-top: 17px;
+  }
+
+  .price__link {
+    height: 15px;
+    width: 310px;
+  }
+
+  .price__item--complex .price__link {
+    margin-top: 40px;
+  }
+
+  .price__item--economy .price__link {
+    margin-top: 30px;
+  }
+
+  .price__title-wrapper {
+    margin-left: 100px;
+    margin-top: 98px;
+  }
+}

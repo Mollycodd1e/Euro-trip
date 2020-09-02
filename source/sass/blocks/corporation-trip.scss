@@ -1,0 +1,72 @@
+.corporation-trip {
+  margin-top: 47px;
+}
+
+.corporation-trip__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #141517;;
+}
+
+.corporation-trip__text {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 288px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  color: rgba(20, 21, 23, 0.5);
+}
+
+@media (min-width: $tablet-width) {
+  .corporation-trip {
+    position: relative;
+    margin-top: 58px;
+    width: 726px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 726px;
+      height: 1px;
+
+      background-color: #D7D9DF;
+    }
+  }
+
+  .corporation-trip__text {
+    width: 720px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .corporation-trip {
+    margin-top: 0;
+    margin-left: 95px;
+    width: 320px;
+
+    &::after {
+      top: 0;
+      left: -50px;
+      width: 2px;
+      height: 189px;
+    }
+  }
+
+  .corporation-trip__title {
+    text-align: left;
+  }
+
+  .corporation-trip__text {
+    width: 100%;
+    text-align: left;
+  }
+}

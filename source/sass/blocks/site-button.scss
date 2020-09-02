@@ -1,0 +1,37 @@
+.site-button {
+  display: block;
+  width: 288px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  outline: none;
+  text-transform: uppercase;
+
+  background-color: #FE7865;
+  color: #FFFFFF;
+}
+
+.site-button:active {
+  background-color: #F17D4B;
+}
+
+@media (min-width: $tablet-width) {
+  .site-button {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-button {
+    padding-top: 31px;
+    padding-bottom: 29px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
